@@ -1,1 +1,13 @@
+# Archivos del Editor (IntelliJ)
 .idea/
+
+# Backend (Java/Maven)
+# Carpeta con el código compilado
+/target/
+
+# Frontend (Node/Vite)
+# Carpeta de dependencias (muy pesada)
+/node_modules/
+
+# Carpeta con la versión para producción
+/dist/
