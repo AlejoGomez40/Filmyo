@@ -3,7 +3,7 @@ version: '3.8'
 services:
   db:
     image: postgres:15-alpine  # Usamos una imagen oficial de PostgreSQL, ligera y optimizada
-    container_name: peliculas-db
+    container_name: peliculas_db
     restart: always
     environment:
       # Aquí defines el usuario y la contraseña de tu base de datos local
