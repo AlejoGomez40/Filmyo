@@ -1,4 +1,4 @@
-package com.filmyo.api;
+package com.filmyo.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
