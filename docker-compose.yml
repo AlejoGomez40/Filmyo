@@ -1,18 +1,15 @@
 services:
   db:
-    image: postgres:15-alpine  # Usamos una imagen oficial de PostgreSQL, ligera y optimizada
-    container_name: peliculas_db
+    image: 'postgres:15-alpine'
+    container_name: filmyo-postgres-container  # <-- ¡Tu excelente idea!
     restart: always
     environment:
-      # Aquí defines el usuario y la contraseña de tu base de datos local
       POSTGRES_USER: miusuario
       POSTGRES_PASSWORD: micontraseña
       POSTGRES_DB: peliculas_db
     ports:
-      # Mapea el puerto de tu ordenador (izquierda) al puerto del contenedor (derecha)
-      - "5432:5432"
+      - "5433:5432"
     volumes:
-      # (Opcional pero recomendado) Guarda los datos fuera del contenedor para que no se borren si lo eliminas
       - postgres_data:/var/lib/postgresql/data
 
 volumes:
