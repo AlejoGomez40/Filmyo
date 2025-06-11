@@ -2,7 +2,7 @@ package com.filmyo.server.model;
 
 import jakarta.persistence.*;
 
-//Podriamos usar LoomBot pero es mejor entender todo esto
+//Podriamos usar LomBok pero es mejor entender todo esto
 
 @Entity
 @Table(name = "users")
